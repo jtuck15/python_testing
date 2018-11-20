@@ -12,13 +12,3 @@ def test_not_in(collection, item):
     
 def test_between(lower, actual, upper):
     assert lower <= actual <= upper, "{0} is not between {1} and {2}".format(lower, actual, upper)
-    
-test_not_equal(4, 3)
-
-test_is_in([1, 2, 7, 9], 7)
-
-test_not_in([4, 3], 1)
-
-test_between(10, 15, 20)
-
-print("All tests passed!")
