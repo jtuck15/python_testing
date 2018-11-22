@@ -12,3 +12,6 @@ def test_not_in(collection, item):
     
 def test_between(lower, actual, upper):
     assert lower <= actual <= upper, "{0} is not between {1} and {2}".format(lower, actual, upper)
+    
+def test_exception_was_raised(amount):
+    assert amount != 0, "Got {0} but should have gotten 0"
